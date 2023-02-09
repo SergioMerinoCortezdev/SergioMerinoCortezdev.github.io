@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat','sans-serif';
+  animation: gradient 15s ease infinite;
+background-color:#191c32;
+overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ffff; 
+   
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff7c; 
+}
+.cards{
+    margin-top: 15vh;
+    width:  60vh;
+    height: 60vh;
+    background-color: #101e4b;
+display:inline-block;
+   margin: 34px;
+
+}
+img{
+    height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+h1{
+    color: aqua;
+    font-family: 'Montserrat','sans-serif';
+    text-align: center;
+}
+
+.info{
+    font-size: 16px;
+   
+    color: #00ffff;
+    
+}
+
+/*****************************************Boton de ver****************************************************************************/
+
+.verprojecto{
+    width: 103px;
+    height: 34px;
+    top: 13px;
+    position: relative;
+    /* border-radius: 20px 40px; */
+   
+    transition: border 1s linear;
+    border-image: linear-gradient(var(--angle), #101e4b, purple) 1;
+background-color: transparent;
+/* animation: border-animation 5s ease-in-out infinite; */
+animation: 5s rotate linear infinite;
+}
+
+.verprojecto:hover {
+    background-color: #00ffff ;
+    cursor: pointer;
+   
+
+  }
+  .verprojecto:hover .boton-span {
+    color: #191c32
+  }
+  .referencia:hover .boton-span {
+    color: #191c32
+  }
+
+  .boton-span{
+color: aliceblue;  
+
+}
+  
+.referencia{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+
+  /* @keyframes border-animation {
+    0% {
+      border-color: red;
+      border-width: 2px;
+    }
+    50% {
+      border-color: blue;
+      border-width: 2px;
+    }
+    100% {
+      border-color: red;
+      border-width: 2px;
+    }
+  } */
+  
+  @keyframes rotate {
+    to {
+      --angle: -360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 360deg;
+    inherits: false;
+  }
+   
+  .animated-border {
+    border: 2px solid red;
+    animation: border-animation 1s linear infinite;
+  }
+

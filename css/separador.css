@@ -1,0 +1,31 @@
+.triangle {
+    position: relative;
+    background: #2c3e50;
+    height: 7vh;
+  }
+  
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 47px 59px 0 59px;
+    border-color: #2c3e50 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+
+
+@media (max-width: 375px) and (max-height: 700px) {
+  /* Estilos para dispositivos con una anchura máxima de 800px y una altura máxima de 600px */
+ 
+  .triangle {
+    position: relative;
+    background: #2c3e50;
+    height: 7vh;
+    top: -82px;
+}
+
+}
