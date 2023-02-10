@@ -1059,20 +1059,19 @@ span.spanproyectos {
 }
 
 .slider {
-  top: 705px;
+  top: 647px;
   position: absolute;
   background-color: #191c32;
   padding: 40px 0;
  
 }
 .skillstitulo {
-  font-size: 2.5em;
-  font-family: 'Montserrat','sans-serif';
-  color: white;
+  margin-top: -38px;
   margin-left: 67px;
 }
 .habilidades{
-  margin-left: -53px;
+  /* margin-left: -53px; */
+  margin-left: -3px;
 }
 
 .socialsgithub {
