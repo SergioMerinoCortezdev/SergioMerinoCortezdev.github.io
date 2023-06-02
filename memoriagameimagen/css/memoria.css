@@ -1,0 +1,15 @@
+html{
+    background: #ccc;
+    
+}
+
+body{
+width: 960px;
+margin:0 auto;
+text-align:center;
+}
+
+canvas{
+    background:blue;
+    border:solid black 3px;
+}
