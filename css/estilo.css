@@ -1,0 +1,391 @@
+*,::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --0:#fff;
+    --50:#ecf7ff;
+    --100:#d4eaff;
+    --200:#b2ddff;
+    --300:#7dc8ff;
+    --400:#40a8ff;
+    --500:#1481ff;
+    --600:#005dff;
+    --700:#0045ff;
+    --800:#0034c2;
+    --900:#0834a0;
+    --950:#0a2161;
+    --height-nav:70px;
+    --align-title:center;
+    --padding: 80px 0;
+
+}
+
+body{
+    background-color: var(--50);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding);
+}
+
+.nav{
+    background: var(--300);
+    height: var(--height-nav);
+    color:var(--950);
+}
+
+.nav__container{
+    height: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.nav__links {
+    display: flex;
+}
+
+
+.nav_link{
+    color: var(--950);
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+
+.nav_link{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+}
+.navs_links::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color:var(--950);
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+  }
+  .navs_links:hover::before{
+    scale:1;
+  }
+
+
+
+
+
+.img__menu{
+    width: auto;
+    height: 9rem;
+}
+
+.hero_main{
+    display:flex;
+    height: calc(100vh - var(--height-nav));
+    align-items: center;
+    min-height: 600px;
+
+}
+
+
+.hero_texts{
+    flex:1;
+
+}
+
+.hero_picture{
+    flex:1;
+   
+}
+
+
+
+
+.hero__img{
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--200);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   
+    animation: animacionperfil 3s linear infinite;
+}
+
+
+
+.hero_title {
+    font-size: 3rem;
+}
+.hero_paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.button{
+    position: relative;
+    display:inline-block;
+    text-decoration: none;
+    background-color: #673ab7;
+    color: azure;
+    padding: 13px 30px;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cta{
+    background: var(--500);
+    background:linear-gradient(90deg, rgba(17,93,147,1) 35%, rgba(18,80,122,1) 100%);
+    
+    display:inline-block;
+    padding: 15px 30px;
+    margin-top: 1.5rem;
+    color:var(--50);
+    text-decoration: none;
+    border-radius: 6px;
+
+}
+
+.cta::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:  100%;
+    background-color: var(--0);
+    opacity: .10;
+    clip-path: circle(0 at center);
+    transition: clip-path .3s;
+}
+.cta:hover::before{
+    
+    clip-path: circle(100% at center);
+    
+}
+.cta:hover,.texto__cv::before{
+   color: var(--950);
+}
+
+.portafolio {
+    background: var(--300);
+}
+
+.portafolio__title {
+    font-size: 2.5rem;
+    margin:0;
+    margin-bottom: 40px;
+    color: var(--950);
+    text-align: center;
+}
+.portafolio__cards {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.portafolio__card {
+    width: 27%;
+    height: auto;
+    background: var(--200);
+    border-radius: 10px;
+}
+.portafolio__picture {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+.portafolio__texts {
+    padding: 30px 20px 40px;
+}
+.portafolio__paragraph {
+    font-weight: 300;
+    margin: 30px 0;
+}
+.portafolio__cta {
+display: block;
+background:  var(--700);
+padding: 15px 0 ;
+border-radius: 30px;
+text-align: center;
+color: var(--100);
+font-weight: 300;
+text-decoration: none;
+}
+
+
+
+
+/******lenguajes*******/
+.lenguajes {
+    position: relative;
+    bottom: 13px;
+}
+
+.languages__container{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.languages__picture{
+    width: 20%;
+    height: 100px;
+}
+
+
+.title{
+    font-size: 2.5rem;
+    margin:0;
+    margin-bottom: 40px;
+    color: var(--700);
+    text-align: var(--align-title);
+}
+
+
+.footer {
+    background: var(--400);
+    color: var(--100);
+    text-align: center;
+}
+.footer__container {
+--color-primary:#fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer__texts {
+    width: 50%;
+}
+.footer__icon.fab {
+line-height: 60px;
+}
+.footer__icon {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50%;
+    
+}
+
+.footer__icon:hover{
+    background: #fff;
+    color: #330867;
+    cursor: pointer;
+}
+
+
+
+.footer__link {
+display: inline-block;
+color:#fff;
+margin: 0 20px;
+margin-bottom: 15px;
+}
+
+.footer__link:hover{
+    text-decoration: none;
+}
+
+
+.footer__img {
+margin: 0;
+width: 30%;
+}
+
+.footer__picture{
+    width: 90%;
+}
+
+
+
+
+@keyframes animacionperfil{
+ 
+0%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: var(--200);
+}
+50%{
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-color: var(--400);
+}
+
+100%{
+    
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-color: var(--200);
+}
+
+}
+
+
+
+@media screen and (max-width:900px){
+    :root{
+        --height-nav-rep:100px;
+
+    }    
+    
+    .nav__container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .hero_main{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .hero_picture{
+        order: -1;
+    }
+    .hero__img{
+        max-width: 380px;
+    }
+.hero_texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+    .hero_title{
+        font-size: 2.5rem;
+    }
+
+    .hero_paragraph{
+        font-size: 1rem;
+    }
+
+    .portfolio__card{
+        width: 90%;
+        max-width: 300px;
+    }
+}
