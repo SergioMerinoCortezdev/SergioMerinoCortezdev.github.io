@@ -231,8 +231,25 @@ font-weight: 300;
 text-decoration: none;
 }
 
+.mas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vermasprojectos{
+    width: 25%;
+    height: 6vh;
+    background-color: var(--600);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.verprojectos{
+    color: var(--100);
 
+}
 
 /******lenguajes*******/
 .lenguajes {
@@ -322,7 +339,6 @@ width: 30%;
 .footer__picture{
     width: 90%;
 }
-
 
 
 
