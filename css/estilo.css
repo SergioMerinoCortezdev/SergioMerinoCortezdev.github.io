@@ -247,6 +247,10 @@ text-decoration: none;
 }
 
 .verprojectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
     color: var(--100);
 
 }
