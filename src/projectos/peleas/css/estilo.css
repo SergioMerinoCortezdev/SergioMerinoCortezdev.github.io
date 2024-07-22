@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a0a5f;
+}
+.contenedorrojo{
+    position:relative; 
+    display: inline-block;
+}
+
+.contenedormini{
+    position:absolute;
+         display: flex;
+          width: 100%;
+           align-items: center;
+           padding: 20px;
+}
+
+.Playerhealth{
+    position: relative;
+    height:30px;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#playerHealt{
+    position:absolute;
+    background: #818CF8;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.vidabajaplayer1{
+    background-color:red;
+     height:30px;
+      width: 100%;
+}
+
+#timer{
+background-image: url('../img/espadasbg.png');
+background-size: 69px;
+background-repeat: no-repeat;
+width: 154px;
+height: 63px;         
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Press Start 2P', cursive;
+}
+
+.enemigodiv{
+    position: relative; 
+    height:30px;
+    width:100%;    
+}
+
+.enemigodamange{
+background-color:red; 
+height:30px;    
+}
+
+#enemyHealt{
+position:absolute;
+background: #818CF8; 
+top: 0;
+right: 0; 
+bottom: 0; 
+left: 0;
+}
+
+#displayText{
+position: absolute;
+color: red;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display: none;
+font-family: 'Press Start 2P', cursive;    
+}
