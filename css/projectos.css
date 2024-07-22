@@ -132,6 +132,25 @@ img{
     color:var(--100);
     
 }
+.programadoen{
+
+}
+.tecnologias{
+
+  width: auto;
+ 
+}
+
+.imgtecnologias {
+  display: flex;
+  padding:1.5rem;
+height: 5em;
+}
+
+.tecnosvg{
+  
+  height: 2.5rem;
+}
 
 /*****************************************Boton de ver****************************************************************************/
 
@@ -143,7 +162,8 @@ img{
     /* border-radius: 20px 40px; */
    
     transition: border 1s linear;
-    border-image: linear-gradient(var(--angle), #101e4b, var(--800)) 1;
+    /*#101e4b */
+    border-image: linear-gradient(var(--angle), #fff, var(--800)) 1;
 background-color: transparent;
 /* animation: border-animation 5s ease-in-out infinite; */
 animation: 5s rotate linear infinite;
