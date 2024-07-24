@@ -14,6 +14,7 @@ class Sprite{
     }
     draw(){ 
         /*update de c.draw*/
+        let comentario="esto es un comentario";
         c.drawImage(
         this.image,
        this.frameCurrent * (this.image.width / this.framesMax),
