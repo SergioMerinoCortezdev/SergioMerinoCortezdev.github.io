@@ -15,6 +15,7 @@ class Sprite{
     draw(){ 
         /*update de c.draw*/
         let comentario="esto es un comentario";
+    try{
         c.drawImage(
         this.image,
        this.frameCurrent * (this.image.width / this.framesMax),
@@ -26,7 +27,10 @@ class Sprite{
         (this.image.width / this.framesMax) * this.scale,
         this.image.height * this.scale,
         );
-
+    }
+        catch(e){
+            console.log(e);
+        }
     }
     animateFrames(){
         this.framesElapsed++;
