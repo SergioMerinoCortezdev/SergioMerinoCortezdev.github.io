@@ -13,6 +13,7 @@ class Sprite{
         this.offset = offset;
     }
     draw(){ 
+        /*update de c.draw*/
         c.drawImage(
         this.image,
        this.frameCurrent * (this.image.width / this.framesMax),
