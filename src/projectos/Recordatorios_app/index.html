@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tareas</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>Tareas</h1>
+
+    <form class="todo-form" id="todo-form">
+      <input type="text" id="todo-input" class="todo-input" placeholder="Escribe una tarea..." required />
+      
+      <!-- <input type="date"  min="2025-04-29" max="2025-04-29" class="fecha" > -->
+      <input type="date"  id="fecha" class="fecha" >
+      <button type="submit" id="btnagregar" >Agregar</button>
+    </form>
+
+    <ul class="todo-list" id="todo-list">
+      <!-- Las tareas se agregarán aquí -->
+    </ul>
+
+    <ul class="tareasAgregadas" id="empty-message">
+
+    </u> 
+  </div>
+
+</body>
+<script src="js/app.js"></script>
+</html>
