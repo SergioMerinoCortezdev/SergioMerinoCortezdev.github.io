@@ -94,7 +94,7 @@
 }
 .notificaciontoast{
   display: block;
-  margin-bottom: -36rem;
+  top: 7px;
   position: absolute;
   right: 15px;
 
