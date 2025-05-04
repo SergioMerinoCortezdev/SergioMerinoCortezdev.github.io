@@ -3,7 +3,14 @@ const todoList = document.querySelector(".todo-list");
 const btnAgregar = document.querySelector("#btnagregar");
 let emptyMessage = document.querySelector(".empty-message");
 const fechaInput = document.getElementById('fecha');
+const toast = document.querySelector('.toast');
 let tareas =  JSON.parse(localStorage.getItem("tasks")) || []; //si no existe en local storage hace un arreglo vacio
+let notificacion = document.querySelector('.toast-body')
+let notificacionfecha = document.querySelector('.tareastitulos')
+const cerrar = document.querySelector('.btn-close'); 
+
+
+
 const itsHoy = new Date();
 // const itsHoyFormat = itsHoy.toLocaleDateString();
 
@@ -19,7 +26,23 @@ function formatearFecha(date) {
 const hoyFormateado = formatearFecha(itsHoy);
 
 
+function notificar(mensaje, fechastasks){
 
+    
+   
+    if(fechastasks ===  hoyFormateado){
+
+        toast.style.display = 'block';
+        
+        cerrar.addEventListener('click', ()=>{
+            toast.style.display = 'none';
+        })
+        notificacionfecha.textContent =  fechastasks;
+        
+    }
+    notificacion.textContent = mensaje ;
+  
+}
 
 function cargarFecha(){
 
@@ -63,26 +86,8 @@ function agregarTarea(task){
         texto:task,
         Datetask:fechaInput.value
     }
-
-    if( tasks.Datetask ===  hoyFormateado ){
-alert("coincide el input con la fecha actual " )
-}else{
-    
-    alert("no" )
-    console.log(tasks.Datetask ===  hoyFormateado)
-    console.log( hoyFormateado)
-    console.log(tasks.Datetask )
-    }
   
-    const tareaList = document.createElement("li");
-    const tareadateList = document.createElement("p");
-    tareaList.classList.add("todo-item");
-    tareadateList.classList.add("todo-item");
-    tareaList.textContent= tasks.texto;
-    tareadateList.textContent = tasks.Datetask; 
-    todoList.appendChild(tareaList);
-    tareaList.appendChild(tareadateList);
-
+        createElements(tasks);
         tareas.push(tasks);
         saveTasks(tareas);
     
@@ -96,20 +101,39 @@ function saveTasks(tasks){
 
 
 function renderTask(tasks){
-   
+
+       if( tasks.Datetask ===  hoyFormateado ){
+        const mensajetext = tasks.texto; 
+        const fechastasks = tasks.Datetask;
+       
+        notificar(mensajetext, fechastasks)
+
+}
+       
+    createElements(tasks);
+
+}
+
+function createElements(tasks){
+    
     const tareaList = document.createElement("li");
     const tareadateList = document.createElement("p");
     tareaList.classList.add("todo-item");
     tareadateList.classList.add("todo-item");
-   
-    tareaList.textContent = tasks.texto; 
+    tareaList.textContent= tasks.texto;
     tareadateList.textContent = tasks.Datetask; 
-    
     todoList.appendChild(tareaList);
     tareaList.appendChild(tareadateList);
+
+  
+
+
 }
 
 
 function limpiarInput(){
     todoInput.value = "";
 }
+
+
+
