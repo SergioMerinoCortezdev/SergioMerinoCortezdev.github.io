@@ -1,18 +1,17 @@
 const todoInput = document.querySelector(".todo-input");
 const todoList = document.querySelector(".todo-list");
 const btnAgregar = document.querySelector("#btnagregar");
-let emptyMessage = document.querySelector(".empty-message");
 const fechaInput = document.getElementById('fecha');
 const toast = document.querySelector('.toast');
+const cerrar = document.querySelector('.btn-close'); 
+const itsHoy = new Date();
+const notificacionSound = new Audio('./sound/cloud.mpeg')
+let emptyMessage = document.querySelector(".empty-message");
 let tareas =  JSON.parse(localStorage.getItem("tasks")) || []; //si no existe en local storage hace un arreglo vacio
 let notificacion = document.querySelector('.toast-body')
+let notificacionDiv = document.querySelector('.notificaciontoast')
 let notificacionfecha = document.querySelector('.tareastitulos')
-const cerrar = document.querySelector('.btn-close'); 
 
-
-
-const itsHoy = new Date();
-// const itsHoyFormat = itsHoy.toLocaleDateString();
 
 cargarFecha();
 
@@ -32,10 +31,13 @@ function notificar(mensaje, fechastasks){
    
     if(fechastasks ===  hoyFormateado){
 
-        toast.style.display = 'block';
+        notificacionDiv.style.display = 'block';
         
+        toast.style.display = 'block';
+        notificacionSound.play();
         cerrar.addEventListener('click', ()=>{
             toast.style.display = 'none';
+            notificacionSound.pause();
         })
         notificacionfecha.textContent =  fechastasks;
         
@@ -99,14 +101,24 @@ function saveTasks(tasks){
     
 }
 
+function mostrarNotificaciontime(mensajetext, fechastasks){
+    setTimeout(function(){
+        
+        notificar(mensajetext, fechastasks);
+        
+    },3000)
+}
+
+
 
 function renderTask(tasks){
 
-       if( tasks.Datetask ===  hoyFormateado ){
+    if( tasks.Datetask ===  hoyFormateado ){
         const mensajetext = tasks.texto; 
         const fechastasks = tasks.Datetask;
        
-        notificar(mensajetext, fechastasks)
+
+           mostrarNotificaciontime(mensajetext, fechastasks)
 
 }
        
