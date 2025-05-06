@@ -13,6 +13,10 @@ let notificacionDiv = document.querySelector('.notificaciontoast')
 let notificacionfecha = document.querySelector('.tareastitulos')
 
 
+
+
+
+
 cargarFecha();
 
 function formatearFecha(date) {
@@ -25,11 +29,13 @@ function formatearFecha(date) {
 const hoyFormateado = formatearFecha(itsHoy);
 
 
-function notificar(mensaje, fechastasks){
+function notification(mensaje, fechastasks){
 
     
-   
-    if(fechastasks ===  hoyFormateado){
+
+    setTimeout(function(){
+               
+        if(fechastasks ===  hoyFormateado){
 
         notificacionDiv.style.display = 'block';
         
@@ -42,7 +48,11 @@ function notificar(mensaje, fechastasks){
         notificacionfecha.textContent =  fechastasks;
         
     }
+    
+    
     notificacion.textContent = mensaje ;
+    
+    },3000)
   
 }
 
@@ -101,14 +111,15 @@ function saveTasks(tasks){
     
 }
 
-function mostrarNotificaciontime(mensajetext, fechastasks){
-    setTimeout(function(){
-        
-        notificar(mensajetext, fechastasks);
-        
-    },3000)
-}
+todoList.addEventListener('click', (e)=>{
+    const idTask = e.target.closest('.todo-item');
 
+    if(e.target.matches('.equis')){
+        eliminarTasks(idTask);
+    }
+
+
+})
 
 
 function renderTask(tasks){
@@ -118,7 +129,9 @@ function renderTask(tasks){
         const fechastasks = tasks.Datetask;
        
 
-           mostrarNotificaciontime(mensajetext, fechastasks)
+     
+        notification(mensajetext, fechastasks)
+
 
 }
        
@@ -130,15 +143,40 @@ function createElements(tasks){
     
     const tareaList = document.createElement("li");
     const tareadateList = document.createElement("p");
+    const eliminarTarea = document.createElement("a");
+
+
     tareaList.classList.add("todo-item");
     tareadateList.classList.add("todo-item");
+    eliminarTarea.classList.add("equis");
+
     tareaList.textContent= tasks.texto;
+    tareaList.dataset.tareaId = tasks.id;
     tareadateList.textContent = tasks.Datetask; 
+    eliminarTarea.innerText ='X';
+    
     todoList.appendChild(tareaList);
+    tareaList.appendChild(eliminarTarea);
     tareaList.appendChild(tareadateList);
 
   
 
+
+}
+
+
+function eliminarTasks(tasksId){
+    
+    const id = parseInt(tasksId.dataset.tareaId);
+
+    tareas = tareas.filter(task=> task.id !== id )
+
+    saveTasks(tareas);
+
+    tasksId.remove();
+
+  
+   
 
 }
 
