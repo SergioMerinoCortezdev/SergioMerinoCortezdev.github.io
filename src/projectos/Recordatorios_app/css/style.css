@@ -93,7 +93,7 @@
   z-index: 1;
 }
 .notificaciontoast{
-  display: block;
+  display: none;
   top: 7px;
   position: absolute;
   right: 15px;
@@ -102,4 +102,11 @@
 
 .tareastitulos{
   color: #e60000;
+}
+.equis{
+  color: #e60000;
+  position: absolute;
+  margin: -3em;
+  cursor: pointer;
+  text-decoration: none;
 }
