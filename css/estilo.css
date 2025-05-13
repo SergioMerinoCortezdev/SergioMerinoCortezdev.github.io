@@ -130,10 +130,16 @@ body{
 
 .hero_title {
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero_paragraph {
     font-size: 1.5rem;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button{
@@ -148,12 +154,14 @@ body{
     cursor: pointer;
 }
 
+/***********************boton de cv********************************/
+
+
 .cta{
-    background: var(--500);
     background:linear-gradient(90deg, rgba(17,93,147,1) 35%, rgba(18,80,122,1) 100%);
-    
-    display:inline-block;
-    padding: 15px 30px;
+    position: relative;
+    right: -15rem;
+     padding: 15px 30px;
     margin-top: 1.5rem;
     color:var(--50);
     text-decoration: none;
@@ -181,6 +189,61 @@ body{
 .cta:hover,.texto__cv::before{
    color: var(--950);
 }
+
+
+/*******************boton de cv progreso*****************************/
+
+.hero_button_cv_progress{
+    width: auto;
+    color: transparent;
+    border-radius: 6px;
+}
+
+.hero_button_cv_fill:after{
+ 
+  content: '';
+  border-radius: 6px;
+  background: var(--300);
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0;
+  display: flex;
+  animation: fill 0.2s linear forwards;
+ 
+}
+.hero_button_cv_complete{
+  
+    border-radius: 6px;
+    width: auto;
+    color: #fff;
+    pointer-events: none;
+}
+
+.hero_button_cv_complete::after{
+  font-family: FontAwesome;
+  content: "\f00c";
+  border-radius: 6px;
+  color: #fff;
+  height: 100%;
+  padding-left: 3px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--600);
+}
+
+@keyframes fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/*******************Portafolio*****************************/
+
 
 .portafolio {
     background: var(--300);
@@ -250,7 +313,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-     width: 100%;
+ width: 100%;
     color: var(--100);
 
 }
@@ -346,6 +409,15 @@ width: 30%;
 
 
 
+
+
+
+
+
+
+
+
+
 @keyframes animacionperfil{
  
 0%{
@@ -372,6 +444,10 @@ width: 30%;
         --height-nav-rep:100px;
 
     }    
+    .nav__logo{
+       position: absolute;
+        left: 1rem;
+    }
     
     .nav__container{
         flex-direction: column;
@@ -403,9 +479,60 @@ width: 30%;
     .hero_paragraph{
         font-size: 1rem;
     }
+        .hero_texts , .hero_button_cv{
+        display: flex;
+         align-items: center;
+      justify-content: center;
+    }
 
     .portfolio__card{
         width: 90%;
         max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Estilos para móviles pequeños */
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav_link {
+        margin: 0.5em 0;
+    }
+    .hero_title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero_paragraph {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .hero_picture {
+        order: -1; /* Mueve la imagen arriba del texto en móviles */
+    }
+    .portafolio__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portafolio__card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .languages__picture {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .footer__container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__texts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer__img {
+        width: 60%;
     }
 }
