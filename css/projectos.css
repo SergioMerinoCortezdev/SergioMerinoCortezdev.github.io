@@ -104,12 +104,17 @@ body{
 .container_cards{
     display: grid;
     grid-template-columns:repeat( 2,1fr);
-    grid-gap: 10px;
-  
+    grid-gap: 10px;  
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -5rem;
+
+
 }
 
-.cards{
+/* .cards{
     margin-top: 15vh;
     width:  60vh;
     height: 60vh;
@@ -117,8 +122,26 @@ body{
     display:inline-block;
     margin: 34px;
     /* background-color: #101e4b; */
+  
+/*} */
 
+.cards {
+  margin-top: 15vh;
+  width: 60vh;
+  height: auto; /* ← cambia esto si quieres que el alto se ajuste al contenido */
+  background-color: var(--500);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa info/tecnos/botón */
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow: hidden; /* evita que se desborde */
 }
+
+
+
+
 
 img{
     height: 200px;
@@ -128,12 +151,14 @@ img{
 
 .info{
     font-size: 16px;
-   
     color:var(--100);
+    text-align:left;
+    justify-content: center;
     
 }
-.programadoen{
-
+.title_cards{
+  color: var(--100);
+  text-align: center;
 }
 .tecnologias{
 
@@ -154,23 +179,44 @@ height: 5em;
 
 /*****************************************Boton de ver****************************************************************************/
 
-.verprojecto{
+/* .verprojecto{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -8rem;
     width: 103px;
     height: 34px;
-    top: 13px;
+    top: 34px;
     position: relative;
-    /* border-radius: 20px 40px; */
-   
-    transition: border 1s linear;
-    /*#101e4b */
+    transition: border 1s linear; 
     border-image: linear-gradient(var(--angle), #fff, var(--800)) 1;
-background-color: transparent;
-/* animation: border-animation 5s ease-in-out infinite; */
-animation: 5s rotate linear infinite;
+    background-color: transparent;
+   animation: 5s rotate linear infinite;
+   border-radius: 5px;
+} */
+
+.verprojecto {
+  margin-top: 1rem;
+  width: 100px;
+  height: 34px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 1s linear; 
+    border-image: linear-gradient(var(--angle), #fff, var(--800)) 1;
+    background-color: transparent;
+   animation: 5s rotate linear infinite;
 }
 
+
+
 .verprojecto:hover {
-    background-color:  var(--900);;
+  border-image: linear-gradient(var(--angle), #fff, #fff) 1;
+    background-color:  #fff;
     cursor: pointer;
    
 
@@ -191,6 +237,45 @@ color: aliceblue;
   text-decoration: none;
   color: aliceblue;
 }
+
+
+
+
+/**********************************************tenologias*********************************************************************/
+
+/* .tecnologiasusada{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+        position: relative;
+    top: .5rem;
+} */
+
+.tecnologiasusada {
+  display: flex;
+  flex-wrap: wrap; /* por si no caben todas en una línea */
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  position: static; /* ← importante */
+}
+
+
+
+
+
+.tecnoimg{
+  width: 5rem;
+  height: 1.9rem;
+}
+
+
+
+
+
 
 
 
