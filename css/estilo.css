@@ -159,6 +159,7 @@ body{
 
 .cta{
     background:linear-gradient(90deg, rgba(17,93,147,1) 35%, rgba(18,80,122,1) 100%);
+     /* display:inline-block; */
     position: relative;
     right: -15rem;
      padding: 15px 30px;
@@ -301,9 +302,9 @@ text-decoration: none;
 }
 .vermasprojectos{
     width: 25%;
-    height: 6vh;
+    height: 9vh;
     background-color: var(--600);
-    border-radius: 50px;
+    border-radius: 97px;
     display: flex;
     justify-content: center;
     align-items: center;
