@@ -438,6 +438,12 @@ width: 30%;
 
 }
 
+@media screen and (max-width: 400px) {
+  .container_cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 @media screen and (max-width:900px){
@@ -486,6 +492,12 @@ width: 30%;
       justify-content: center;
     }
 
+    .hero_button_cv{
+        left: 0rem;
+    }
+
+
+
     .portfolio__card{
         width: 90%;
         max-width: 300px;
@@ -494,14 +506,26 @@ width: 30%;
 
 @media (max-width: 576px) {
     /* Estilos para móviles pequeños */
+    .nav__container{
+                    flex-direction: column;
+        justify-content: space-evenly;
+    }
     .nav__links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+       width: 89%;
+       display: flex;
+       justify-content: space-between;
     }
     .nav_link {
         margin: 0.5em 0;
     }
+
+    .img__menu{
+        position: relative;
+        left: -3rem;
+        z-index: 1;
+    }
+
+
     .hero_title {
         font-size: 2rem;
         text-align: center;
@@ -513,6 +537,9 @@ width: 30%;
     .hero_picture {
         order: -1; /* Mueve la imagen arriba del texto en móviles */
     }
+    .hero_button_cv {
+        left: 0rem;
+    }
     .portafolio__cards {
         flex-direction: column;
         align-items: center;
@@ -520,6 +547,14 @@ width: 30%;
     .portafolio__card {
         width: 90%;
         margin-bottom: 20px;
+    }
+     .vermasprojectos{
+        width: 14rem;
+    }
+    .languages__container{
+        display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
     }
     .languages__picture {
         width: 45%;
@@ -534,6 +569,15 @@ width: 30%;
         margin-bottom: 20px;
     }
     .footer__img {
+        position: relative;
+        right: -1rem;
         width: 60%;
     }
+
+   .footer__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
 }
