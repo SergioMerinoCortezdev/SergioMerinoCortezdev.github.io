@@ -101,18 +101,14 @@ body{
     margin-bottom:1.5em;
     }
 
-.container_cards{
+.container_cards {
     display: grid;
-    grid-template-columns:repeat( 2,1fr);
-    grid-gap: 10px;  
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 1rem;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    right: -5rem;
-
-
 }
+
 
 /* .cards{
     margin-top: 15vh;
@@ -293,12 +289,56 @@ color: aliceblue;
 
 
 
-@media screen and(max-width:400px){
+@media screen and (max-width: 400px) {
+
     .gallery{
         grid-template-columns:1fr;
     }
 
     .show__close{
         right: -10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .img__menu {
+        height: 6rem;
+    }
+
+    .cards {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        padding: 0.5rem;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .tecnoimg {
+        width: 3rem;
+        height: 1.5rem;
+    }
+
+    .verprojecto {
+        width: 80px;
+        height: 30px;
+        font-size: 0.8rem;
     }
 }
