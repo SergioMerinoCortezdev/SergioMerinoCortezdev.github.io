@@ -1,0 +1,165 @@
+:root{
+    --image-url:url(../img/imagen1.jpg);
+    --0:#fff;
+    --50:#ecf7ff;
+    --100:#d4eaff;
+    --200:#b2ddff;
+    --300:#7dc8ff;
+    --400:#40a8ff;
+    --500:#1481ff;
+    --600:#005dff;
+    --605:rgba(0, 93, 255,0.5);
+    --700:#0045ff;
+    --800:#0034c2;
+    --900:#0834a0;
+    --950:#0a2161;
+    }
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    .container{
+        width:90%;
+        max-width: 1200px;
+        margin:0 auto;
+        overflow:hidden;
+        padding:50px 0;
+    }
+    body{
+        font-family: sans-serif;
+        background-color: var(--500);
+    }
+    
+    /* .title {
+    font-size: 2rem;
+    border-bottom: 6px solid var(--800);
+    padding-bottom: .5em;
+    margin-bottom:1.5em;
+    } */
+     .title {
+    display: flex;
+    justify-content: center; /* centra todo */
+    align-items: center;
+    gap: 10px; /* espacio entre texto e ícono */
+    font-size: 2rem;
+    border-bottom: 6px solid var(--800);
+    padding-bottom: .5em;
+    margin-bottom:1.5em;
+}
+
+    .gallery {
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: 270px;
+        gap: 1em;
+    }
+    .gallery__link {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .gallery__link:hover::before{
+        transform: translateY(0);
+    
+    }
+    .icon_certificate{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .gallery__link::before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        background-color:var(--605);
+        transform: translateY(100%);
+        transition: transform .3s;
+    }
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display:block;
+    }
+     
+    .show {
+        position: fixed;
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display:flex;
+        transform: scale(0);
+        transition:transform .3s;
+    }
+    .show:target{
+        transform:scale(1);
+    }
+    
+    .show__container{
+        /* width: 90%; */
+        width: 41%;
+        height: 70%;
+        position: relative;
+        background-image: var(--image-url);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 6px 6px 10px rgba(0,0,0,.3);
+        margin: auto;
+    }
+    .show--n1 {
+        --image-url:url(../img/certificados/fundamentos_de_ciberseguridad.PNG);
+    }
+    .show--n2 {
+        --image-url:url(../img/certificados/soporte_tecnico_coursera.jpg);
+    }
+    .show--n3 {
+        --image-url:url(../src/Certificados/certificados/certificado_vue_tsystem.jpg);
+    }
+    .show--n4 {
+        --image-url:url(../src/Certificados/certificados/certificado_alert.jpg);
+    }
+    .show--n5 {
+        --image-url:url(../src/Certificados/certificados/certificado_kind.jpg);
+    }
+    .show--n6 {
+        --image-url:url(../src/Certificados/certificados/certificado_strong.jpg);
+    }
+    .show--n7 {
+        --image-url:url(../src/Certificados/certificados/certificado_smart.jpg);
+    }
+    .show__close {
+    background:crimson;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position:absolute;
+    top:-20px;
+    right:-20px;
+    border-radius: 50%;
+    }
+    
+    @media screen and(max-width:400px){
+        .gallery{
+            grid-template-columns:1fr;
+        }
+    
+        .show__close{
+            right: -10px;
+        }
+    }
