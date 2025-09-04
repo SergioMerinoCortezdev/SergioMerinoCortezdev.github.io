@@ -103,9 +103,8 @@
     }
     
     .show__container{
-        /* width: 90%; */
-        width: 41%;
-        height: 70%;
+        width: 60%;
+        height: 95%;
         position: relative;
         background-image: var(--image-url);
         background-size: cover;
@@ -160,6 +159,7 @@
         }
 
     }
+
 
 
 
