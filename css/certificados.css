@@ -118,11 +118,11 @@
         box-shadow: 6px 6px 10px rgba(0,0,0,.3);
         margin: auto;
     }
-    .show--n1 {
-         --image-url:url(../img/certificados/fundamentos_de_ciberseguridad.PNG);
+   .show--n1 {
+        --image-url:url(../src/Certificados/certificados/certificado_coursera_google.JPG);
     }
     .show--n2 {
-       --image-url:url(../img/certificados/soporte_tecnico_coursera.jpg);
+        --image-url:url(../src/Certificados/certificados/certificado_soportetecnico.jpg);
     }
     .show--n3 {
         --image-url:url(../src/Certificados/certificados/certificado_vue_tsystem.jpg);
@@ -165,5 +165,6 @@
         }
 
     }
+
 
 
