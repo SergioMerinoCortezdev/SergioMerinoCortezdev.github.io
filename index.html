@@ -6,6 +6,7 @@
     <link href="src/output.css" rel="stylesheet">
     <link href="css/estilo.css" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link rel="icon" href="img/logosmc.png" sizes="100">
 <script src="https://unpkg.com/scrollreveal"></script>
     <title>Sergo Merino C.💻</title>
@@ -17,13 +18,17 @@
                 <figure class="nav__logo">
                     <img src="img/logosmc.png" alt="" class="img__menu">
                 </figure>
-
-    <ul class="nav__links">
-
-         <li class="nav_link"><a href="#portafolio" class="nav_link"><span class="navs_links"> Projectos </a></li></span>
-        <li class="nav_link"><a href="src/Certificados/index.html" class="nav_link"><span class="navs_links"> Certificados</a></li></span>
-        <li class="nav_link"><a href="#tecnologias" class="nav_link"><span class="navs_links"> Tecnologias </a></li></span>
-        <li class="nav_link"><a href="#contacto" class="nav_link"><span class="navs_links"> Contactos</a></li></span>
+ <!-- Botón hamburguesa -->
+    <div class="nav__toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+       <ul class="nav__links" id="nav-menu">
+      <li class="nav_link"><a href="#portafolio" class="navs_links">Projectos</a></li>
+      <li class="nav_link"><a href="src/Certificados/index.html" class="navs_links">Certificados</a></li>
+      <li class="nav_link"><a href="#tecnologias" class="navs_links">Tecnologias</a></li>
+      <li class="nav_link"><a href="#contacto" class="navs_links">Contactos</a></li>
     </ul>
 
 
@@ -35,7 +40,7 @@
             <div class="hero_texts">
                 <h1 class="hero_title"> Sergio Merino Cortez</h1>
                 <p class="hero_paragraph">Desarrollo y Soporte Tecnico</p>
-                <a href="CV/CV.pdf" download class="cta button hero_button_cv"><p class="texto__cv">Descargar cv</p></a>
+                <a href="CV/SergioMERINO.pdf" download class="cta button hero_button_cv"><p class="texto__cv">Descargar cv</p></a>
                
             </div>
             
@@ -95,7 +100,7 @@
 
     <div class="vermasprojectos">
         <a href="src/projectos/projectos.html" class="verprojectos">
-            Ver mas proyectos
+            Ver mas projectos
         </a>
     </div>
 </div>
@@ -124,7 +129,7 @@
             <h2 class="title">Contacto</h2>
 
             <div class="footer__icons">
-                 <a href="https://wa.me/2212568226" target="_blank" class="footer__icon "><img src="src/icons/whatsapp_logo.gif" alt=""></a>
+                <a href="https://wa.me/2212568226" target="_blank" class="footer__icon "><img src="src/icons/whatsapp_logo.gif" alt=""></a>
                 <a href="https://outlook.live.com/mail/0/deeplink/compose?to=merino27dev@hotmail.com&subject=Consulta&body=Hola" target="_blank" class="footer__icon"><img src="src/icons/mail.gif" alt=""></a>
                 <a href="https://mx.linkedin.com/in/sergio-merino-cortez-0958631b6" target="_blank" class="footer__icon"><img src="src/icons/wired-flat-2632-logo-circle-linkedin-hover-pinch.gif" alt=""></a>
             </div>
@@ -152,6 +157,3 @@
 
 </body>
 </html>
-
-
-
