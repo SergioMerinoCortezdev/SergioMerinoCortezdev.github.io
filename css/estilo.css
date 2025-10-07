@@ -412,38 +412,28 @@ width: 30%;
 /* ====== BOTÓN HAMBURGUESA ====== */
 .nav__toggle {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
+  background-image: url('../img/assets/menu.svg');
   width: 30px;
   height: 21px;
   cursor: pointer;
   z-index: 1002;
 }
 
-.nav__toggle span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--950);
-  border-radius: 3px;
-  transition: all 0.3s ease;
+.menu_icon{
+background-image: url('../img/assets/menu.svg');
 }
 
+
 /* Efecto X */
-.nav__toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.nav__toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-.nav__toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+.close_menu{
+    background-image: url('../img/assets/close.svg');
 }
 
 /* ====== MENÚ PANTALLA COMPLETA ====== */
 @media (max-width: 900px) {
   .nav__toggle {
     display: flex;
+    
   }
 
   .nav__links {
@@ -471,6 +461,7 @@ width: 30%;
     color: var(--950);
     text-decoration: none;
     transition: color 0.3s ease;
+    margin-top: -11px;
   }
 
   .nav_link a:hover {
@@ -582,17 +573,18 @@ width: 30%;
         justify-content: space-evenly;
     }
     .nav__links {
-       width: 89%;
+       width: 100%;
        display: flex;
        justify-content: space-between;
     }
     .nav_link {
-        margin: 0.5em 0;
+        /* margin: 0.5em 0; */
+        margin: 55px 0;
     }
 
     .img__menu{
         position: relative;
-        left: -3rem;
+        left: 0rem;
         z-index: 1;
     }
 
