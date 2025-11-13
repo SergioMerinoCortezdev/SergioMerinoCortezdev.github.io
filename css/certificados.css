@@ -103,6 +103,7 @@
     }
     
     .show__container{
+        /* width: 90%; */
         width: 60%;
         height: 95%;
         position: relative;
@@ -112,7 +113,7 @@
         box-shadow: 6px 6px 10px rgba(0,0,0,.3);
         margin: auto;
     }
-   .show--n1 {
+    .show--n1 {
         --image-url:url(../src/Certificados/certificados/certificado_coursera_google.JPG);
     }
     .show--n2 {
@@ -157,10 +158,44 @@
         .show__close{
             right: -10px;
         }
-
     }
 
+    
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
 
+    .icon_certificate {
+        width: 60px;
+        height: 60px;
+    }
 
+    .show__container {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 
+    .show__container {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 5/4;
+    }
+
+    .show__close {
+        top: -10px;
+        right: -10px;
+        font-size: 1.5rem;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
