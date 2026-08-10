@@ -91,7 +91,32 @@ Credicel, siempre a tu servicio.
     
     `
   
-}
+},
+
+"liberar-equipo-enrolado":{
+  titulo:"formatosistemas",
+  campos:[
+    {id: "marca", label:"MARCA", type:"text", placeholder: "MARCA"},
+    {id: "modelo", label:"MODELO", type:"text", placeholder: "MODELO"},
+    {id: "imei", label:"IMEI", type:"text", placeholder: "IMEI"},
+    {id: "motivoSolicitud", label:"Motivo de la Solicitud", type:"text", placeholder: "Motivo de la Solicitud"},
+    {id: "motivoNoVenta", label:"Motivo por el cual no se realizo la venta con credicel", type:"text", placeholder: "Motivo por el cual no se realizo la venta con credicel"},
+  ],
+  generarTexto:(datos)=>
+    `
+    MARCA: ${datos.marca}
+    MODELO: ${datos.modelo}
+    IMEI: ${datos.imei}
+    Motivo de la Solicitud: ${datos.motivoSolicitud}
+    Motivo por el cual no se realizo la venta con credicel: ${datos.motivoNoVenta}
+    
+    
+    `
+  
+},
+
+
+
 
 
 };
