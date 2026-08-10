@@ -1,0 +1,443 @@
+Archivo de respuestas rápidas:
+---
+
+CASOS DE DESBLOQUEO Y SOLICITUDES DE TAG Y REFERENCIAS DE PAGO:
+
+🤖¡Pídelo tú mismo en Credichat 2215944025! 🤖
+
+Solo envía la palabra desbloqueo seguido de los datos del equipo.
+
+🔸Para desbloqueos con código manual por bloqueo INEQ solicítelo de la siguiente forma:
+
+desbloqueo INEQ (escriba el IMEI del equipo).
+
+Ejemplo: Desbloqueo INEQ 353514294047789
+---
+🔹Para desbloqueos donde solicite PIN Samsung escriba su solicitud de la siguiente forma:
+Desbloqueo Samsung (escriba los dígitos del IMEI) (escriba los dígitos de la clave de acceso).
+Ejemplo: Desbloqueo Samsung 353514294047789 12957869
+La información sobre IMEI y clave de acceso la encuentra en la pantalla de bloqueo.
+🚀Súper fácil y rápido, 24/7. ¡Ahorra tiempo y listo! 😎
+___________________________________________________________________________
+Consulte la información del equipo a plazos de manera rápida y sencilla: referencia de pago de Oxxo.
+Desde CREDICHAT 🤖: 2215944025
+Para consultar la información que necesite realice la solicitud de la siguiente manera:
+OXXO +  IMEI; por ejemplo
+OXXO 123456789012345
+___________________________________________________________________________________
+Consulte la información del equipo a plazos de manera rápida y sencilla: Solicitud de TAG.
+Desde CREDICHAT 🤖: 2215944025
+Para consultar la información que necesite realice la solicitud de la siguiente manera:
+TAG + IMEI; por ejemplo
+*TAG 123456789012345*
+__________________________________________________________________________
+Fin del caso por tiempo (15 min o mas sin respuesta PRIVADO)
+
+
+Lamentablemente, aún no hemos recibido una respuesta de su parte, nos vemos en la necesidad de finalizar nuestra atención por el momento.  🚫
+Entendemos que pueden haber surgido circunstancias que le impidan responder a nuestros mensajes. Le agradecemos su comprensión y le recordamos que estamos siempre a su disposición para cualquier consulta o problema que necesite resolver en el futuro. 🤝
+Si tiene alguna pregunta o inquietud adicional, no dude en contactarnos en cualquier momento. 💬
+___________________________________________________________________________
+Fin del caso por tiempo (15 min o mas sin respuesta GRUPO)
+
+Por el momento finalizaremos el caso al no recibir respuesta. Por favor, no dude en contactarnos nuevamente si necesita ayuda en el futuro. 💬
+___________________________________________________________________________
+Solicitud de Bloqueo por Robo o Extravió.
+
+Favor de proporcionar una carta escrita con puño y letra del cliente mediante una fotografía con los siguientes datos:
+📌 TITULO de la carta: "Solicitud de bloqueo"
+
+1.- Fecha de solicitud del bloqueo
+2.- Nombre completo
+3.- Contenido de la carta:
+Yo (nombre completo) solicito el bloqueo del equipo por robo/extravío con IMEI: (indique IMEI completo), soy consiente que el bloqueo no me exime de realizar los pagos semanales puntualmente,  por lo cual me comprometo a liquidar el total del financiamiento.
+4.- Firma del cliente
+Luego de ello por favor:
+Coloque la INE del cliente encima de la carta sin tapar la información, y envié foto de la carta + INE 📸
+Si el cliente ya no cuenta con la INE puede tomarse una foto sosteniendo el documento de la solicitud y también brindar un numero de contacto del cliente por favor. Reforzar que deben enviar número de contacto
+___________________________________________________________________________________
+Mensaje para retirar la APP de INEQ (APP DE INEQ AUN ESTA COMO APP DE INCIO)
+
+Para retirar INEQ por favor reinicie el equipo y ya sin abrir INEQ retire la aplicación de la siguiente manera:
+1. Ingrese a Configuraciones ⚙️
+2. Posteriormente Aplicaciones.
+3. Localice Aplicaciones Instaladas.
+4. Después Aplicaciones Predeterminadas. 5. Demos clic en App de Inicio y seleccione otra aplicación que no sea INEQ y me comparte foto 📸
+(Si presenta dudas me brinda imagen de cada paso para apoyarle e irle guiando)
+___________________________________________________________________________________
+NIP y contrato: Ya no se le marca al cliente.
+¿Me puede ayudar brindándome el Folio del cliente y su numero telefónico por favor?
+Así vamos a poder brindarle el (NIP/CONTRATO)
+____________________________________________________________________________
+Info de como liberar el equipo al liquidar su equipo a plazos:
+Al momento de completar el financiamiento 💯 se envía de manera automática la liberación del equipo 📱.
+Para recibirla es necesario que el dispositivo este conectado a internet 🛜 (WIFI o DATOS)
+Abra INEQ:
+De clic en ACEPTAR LIBERACIÓN, luego seleccione: DECLINAR, y desinstale la app de INEQ.
+Si no le permite desinstalar; apague y encienda el equipo, y vaya directamente a ajustes, buscar la aplicación INEQ y proceda a desinstalar la app.
+______________________________________________________________________________
+Realizar firma de contrato mediante Google y no WhatsApp:
+
+Se valida que la firma del contrato lo esta realizando desde NAVEGADOR de WHASTAPP por ello no le permite continuar ❌.
+La prueba de vida y firma del contrato se debe realizar desde navegador de *GOOGLE CHROME*, realice lo siguiente:
+1. Favor de dar clic en los tres puntos en la parte superior de la pantalla
+2. Seleccione copiar vinculo/link
+3. Abra GOOGLE CHROME & pegue el enlace copiado
+4. Active desde el navegador los permisos de CÁMARA 📷 & UBICACIÓN  📌
+5. Genere una vez más la prueba de vida por favor
+_________________________________________________________________________________
+Folio rechazado ❌😔
+El sistema de evaluación de financiamiento considera diversos factores, y en este momento no es posible aprobar el financiamiento para su cliente.
+Le invitamos a intentarlo más adelante, ya que nuestras evaluaciones se actualizan constantemente. Se recomienda realizar una nueva solicitud en un periodo de 2 a 3 meses.
+¡Gracias por su confianza en CREDICEL! 🫡
+_______________________________________________________________________________________
+Instalar INEQ en equipo XIAOMI
+
+Por favor apóyeme en realizar los siguientes pasos para instalar INEQ con el CONFIGURADOR DE INEQ en este equipo XIOAMI. 📱
+
+1. Ingrese SIM del cliente al equipo
+2. Ingrese cuenta XIAOMI (Ajustes ⚙️ > Cuenta Xiaomi y seleccione "Iniciar sesión" o "Crear cuenta")
+3. Active el modo desarrollador, ve a Configuración > Acerca del teléfono, y pulsa repetidamente (unas 7 veces) sobre "Versión de MIUI" o "Versión del sistema operativo"
+4. Active los siguientes puntos en el DEPURADOR DE USB: *Depuración por USB* ✅ *Instalar vía USB* ✅ *Depuración USB (ajustes de seguridad)* ✅
+5. Cuando se hayan activado los puntos anteriores del paso 3, favor retirar la cuenta de XIAOMI (Ajustes ⚙️ > Cuenta Mi > Cerrar sesión > Ingresar usuario & contraseña)
+6. Reintentar con el CONFIGURADOR, dando clic *INICIAR PROCESO*
+_____________________________________________________________________________________
+Respuesta para pagos no reflejados por X o Y razón
+
+Buen día 🤗, su pago ya fue reportado y se reflejará lo antes posible, esto puede tomar como máximo 2 horas en verse reflejado. Mientras tanto; ¿podría validar si su dispositivo ya se encuentra desbloqueado, por favor?. ✅📲
+Solicito de su apoyo para que en el apartado de *concepto/motivo de pago* se ingrese lo siguiente para que los próximos pagos se reflejen directamente a la cuenta: (COLOCAR EL TAG + TAG del cliente)
+¡Quedamos atentos a cualquier situación que presente!
+¡Le mandamos un cordial saludo, equipo Credicel! 🤝
+_____________________________________________________________________________________________
+Enrolamiento de HONOR y XIAOMI EXPRES (Nuevo)
+
+Pasos para Equipos (XIAOMI Y HONOR) para enrolamiento Express (Sin INEQ)
+1. Colocar el IMEI del equipo en la plataforma de Credicel y usar el botón de verificar.
+2. Una vez que salga el mensaje de enrolamiento, ya puedes encender el equipo y conectarlo a Wifi.(Configurarlo de manera normal, si lo enciendes antes de la pantalla de enrolamiento no se podrá vender
+3. Una vez que ya este configurado esperar el mensaje de enrolamiento en la pantalla del equipo y darle siguiente.
+4. Validar que te deje avanzar con la venta.
+____________________________________________________________________________________________
+ENROLAMIENTO DE HONOR & XIAOMI (con INEQ)
+
+Al tener el equipo INEQ no se están cumpliendo con las condiciones de que el equipo este completamente sellado (sin encender, no tener conectado a internet). Esto puede afectar a que no reciba el enrolamiento; sin embargo, se intentara con lo siguiente para validar si puede recibir el enrolamiento pero no se puede garantizar que el proceso funcione.
+Se enviara la liberación de INEQ al equipo y cuando lo retire realice lo siguiente:
+1. Restablezca el equipo a valores de fábrica 📲
+2. Cuando el equipo este en la pantalla de BIENVENIDA; demos clic en VERIFICAR EL IMEI en su consola de venta. 💻✅
+3. Inicie la configuración del equipo hasta la pantalla de inicio 📱y conéctelo a una red de WIFI 🛜
+
+📌 Nota: Si después de este proceso el equipo en 5 min no recibe el enrolamiento para continuar con la venta será necesario generar cambio de equipo.
+
+____________________________________________________________________________________________
+Enrolamiento de HONOR y XIAOMI (ya encendido)
+
+En caso de que el equipo ya fuera encendido antes de realizar este proceso de enrolamiento, vamos a realizar lo siguiente:
+
+1.- Recarga la plataforma, retoma la venta con el mismo folio.
+2.- Restablece a valores de refabrica el equipo.
+3.- Una vez que el equipo este en pantalla de BIENVENIDA (Restablecido), coloca el IMEI del equipo en la plataforma de Credicel y usar el botón de verificar.
+4.- Una vez que salga el mensaje de enrolamiento, vas a configurar el equipo de manera normal conectado a Internet, esperemos un poco.
+Debemos de esperar un lapso de entre los primeros 5 a 10 min después de realizar este paso, veremos si el equipo es posible enrolarse con la marca.
+____________________________________________________________________________________________
+ENROLAMIENTO SAMSUNG
+
+Muy amable por su tiempo de espera, revisando el equipo con IMEI: aún no se encuentra enrolado con el sistema de Knox.
+Por favor verifique que el equipo no tenga actualizaciones pendientes del sistema operativo; si todo esta en orden por favor genere lo siguiente:
+1. Restablezca el equipo a valores de fábrica 📲
+2. Cuando el equipo este en la pantalla de BIENVENIDA; demos clic en VERIFICAR EL IMEI en su consola de venta. 💻✅
+3. Inicie la configuración del equipo hasta la pantalla de inicio 📱y conéctelo a una red de WIFI 🛜
+_____________________________________________________________________________________________
+LINK SAMSUNG
+
+Realicemos lo siguiente:
+Desde el equipo que esta en proceso de venta (Samsung) 📱 ingrese al siguiente link:
+🔗 https://guard.samsungknox.com/
+Demos clic en el botón que indica *ENROLL THIS DEVICE* espere 5 min y reintente.
+📌 Nota: Si le aparece alguna leyenda, favor de notificar.
+
+_____________________________________________________________________________________________
+Enrolamiento Exprés en marcas (MOTOROLA/ SAMSUNG/ TECNO/ INFINIX)
+
+Vemos que el equipo (IMEI) aun no se logra enrolar con la marca (X), le recomiendo el realizar los siguientes consejos que tenemos por parte de la marca:
+1.- Actualiza el Sistema Operativo del equipo, al terminar vamos a restablecer el equipo a valores de fabrica y realizamos el proceso de enrolamiento nuevamente colocando el IMEI del equipo en la plataforma de Credicel y usar el botón de verificar.(En caso de que ya este actualizado el equipo salta este Consejo)
+2.- Reinicia el equipo y mantén conectado el equipo a Internet.
+3.- Restablece el equipo a valores de fabrica e intentemos nuevamente el proceso de enrolamiento.
+4.- Cambiar de RED WIFI o usar DATOS MVILES y reintentar el proceso de enrolamiento.
+___________________________________________________________________________________________
+Respuesta de que el equipo no se pueda enrolar con la marca (Exprés)
+
+Lamentablemente se han seguido las recomendaciones para lograr enrolar el equipo con la marca (X), pero no ha sido posible por lo que recomendamos para agilizar la venta se pueda realizar un cambio de equipo e intentar el proceso de enrolamiento con otro, también se puede intentar cambiar de marca y modelo si así lo desea.
+Ya que este proceso es ajeno a CREDICEL y depende del Equipo, la conexión a Internet y la Marca.
+__________________________________________________________________________________________
+FIN CLIENTES FINALES
+
+💜 ¡Gracias por comprar con Credicel!
+	
+Queremos que disfrutes al máximo tu celular y todo lo que Credicel tiene para ti.
+	
+🌟 Activa tu acceso a beneficios y promociones aquí:
+https://portalcredicel.com/
+	
+Da clic en Acceso a clientes, escribe tu TAG XXXXX, selecciona “Actualiza y Gana” y confirma tus datos.
+	
+✅ Desde tu portal también puedes consultar información de tu compra, generar referencia de pagos y conocer promociones.
+	
+💰 Mantener tus pagos al día te ayuda a cuidar tu historial crediticio y seguir participando en beneficios Credicel.
+	
+📩 ¿Tienes dudas o necesitas ayuda con tus pagos? Escríbenos por WhatsApp al 221 190 0006.
+	
+Sujeto a términos y condiciones.
+
+______________________________________________________________________________________________
+
+INSTALACIÓN DE UNA APK
+
+Para procesar la solicitud requerimos que nos proporcione los siguientes datos, por favor:
+
+Nombre de la APP:
+Archivo de la APK:
+Para que sirve la APP:
+______________________________________________________________________________________________
+FOLIO A COTIZADOR
+
+Le agradezco su tiempo de espera, pido de su apoyo para actualizar su página de venta y continuar con su flujo de venta normal ya que el folio: ha sido actualizado y regresado al cotizador.
+
+¿Puedo apoyarle en algo más?
+______________________________________________________________________________________________
+CAMBIO DE FUERZA DE VENTA
+
+Gracias por su amable tiempo de espera, le invito actualizar su página de venta y continuar con su proceso de venta normal con el folio:(x) .
+
+Solicito de su apoyo para comentarle al cliente que si desea finalizar el trámite debe realizarlo en esta sucursal, ya que no se podrán generar más movimientos de este tipo al folio.
+
+¿Puedo apoyarle en algo más?
+_____________________________________________________________________________________________
+CAMBIO DE NÚMERO ÉXITOSO
+
+Muy amable por su tiempo de espera. Se ha realizado la actualización/corrección del número con éxito, el cliente debe mantener acceso a este número mientras el se sigan pagando el equipo a plazos, ya que lo necesitará para recibir la llamada de bienvenida y nuestras notificaciones. ¡Gracias por su apoyo!.
+
+¿Puedo apoyarle en algo más?
+____________________________________________________________________________________________
+
+FOLIO RECHAZADO POR INE
+
+Gracias por su amable tiempo de espera; validando los datos de la INE del cliente en la página oficial de LISTA NOMINAL nos llega arrojar este resultado 👆🏼.
+
+Es necesario que el cliente pueda acudir a los módulos oficiales de atención del INE para validar su caso.
+
+Sin embargo el folio: continua en STATUS: RECHAZADO.
+_______________________________________________________________________________________________
+CORRECCIÓN DE IMEI
+
+Listo por favor demos clic al botón que indica VALIDAR CAMBIO DE IMEI, posteriormente actualice su página de venta e ingrese su folio y continúe su proceso de venta normal.
+
+¿Puedo apoyarle en algo más?
+_______________________________________________________________________________________________
+BLOQUEO POR CUENTA GOOGLE
+
+Le agradezco su tiempo de espera, ya el área responsable ha realizado la validación del caso de manera exitosa. Le comento es necesario que el cliente realice un pago por el monto de $000.00 a la siguiente cuenta:
+
+🏦 Banco: BBVA (Bancomer)
+👤 Titular: MICROTECNOLOGÍAS MÓVILES S.A. DE C.V.
+💳 Cuenta: 0196761445
+🔢 CLABE: 012650001967614455
+
+En el apartado de concepto se debe ingresar: *GOOGLE + Nombre del cliente*
+
+*En caso de que el cliente no quiera realizar el pago mencionado, deberá retener el equipo celular y hacérnoslo llegar a nuestra oficina por favor.*
+
+Es importante que reporte el equipo a su administrador y que él tenga el equipo físicamente, ya que al momento de que se genere el pago solicitado; su administrador se debe poner en contacto con nosotros ya con el equipo y el comprobante para brindarle la atención del desbloqueo.
+
+El horario de atención para este desbloqueo es de Lunes a Viernes de 12:00 p.m. a 06:00 p.m. hora Centro México.
+
+Este monto y proceso solo se respetarán por 72hrs, el equipo no debe ser entregado hasta que el proceso finalicé. Si en dado caso que su ADM demore más 72hrs en generar la solicitud al número antes brindado, se tiene que generar una nueva validación de costo y proceso para el cliente.
+
+¿Me puede indicar si el cliente generará el pago o nos enviarán el equipo a oficina?
+________________________________________________________________________________________________
+CUENTA DE TRABAJO GMAIL
+
+Para apoyarle a ingresar el correo del cliente y que este pueda ingresar a la PLAY STORE, solicito de su apoyo para realizar lo siguiente:
+
+PRIMERO: Ingrese en la app de *AJUSTES*
+SEGUNDO: De clic al apartado de *GOOGLE*
+TERCERO: De clic donde indica *AGREGAR CUENTA*
+CUARTO: El cliente debe ingresar su *correo y contraseña* a pesar de que le indique que se esta agregando una cuenta de trabajo lo debe de ingresar de manera normal sus datos y ya por ultima dar clic en *FINALIZAR*
+_________________________________________________________________________________________________
+LLAMADA DE BIENVENIDA DESBLOQUEO TEMPORAL
+
+Se han canalizado los datos del cliente al área responsable para que se genere la LLAMADA DE BIENVENIDA en un lapso no mayor de 30 min, además se ha enviado un desbloqueo temporal para que el cliente pueda tomar la llamada.
+
+📌 Nota: Si el cliente no toma la llamada el equipo será bloqueado nuevamente hasta que el área pueda contactarse.
+__________________________________________________________________________________________________
+LLAMADA DE BIENVENIDA VIDEO
+
+Le agradezco su amable tiempo de espera, nos indica el área responsable que no pudo validar correctamente los datos del cliente.
+
+Por tal motivo nos solicitan que el cliente genere un video diciendo lo siguiente con respecto al equipo a plazos adquirido:
+
+"Yo (nombre cliente) acepto que voy a realizar N pagos semanales de $000.00. En caso de no pagar entiendo que mi celular va a ser bloqueado y reportado a círculo de crédito.
+
+Durante el financiamiento no puedo restablecer el celular de fábrica puesto que puede generar un costo el desbloqueo.
+___________________________________________________________________________________________________
+REINSTALACIÓN DE INEQ
+
+Muchas Gracias por su amable tiempo de espera, validando la cuenta se encuentra al corriente, entonces con gusto le apoyaremos con el proceso del retiro de la APP y con el proceso de reinstalación; sin embargo, es importante que usted y el cliente estén de acuerdo con lo siguiente:
+
+El equipo eliminara todos los datos que estén en el equipo y no podrán ser recuperados sin un respaldo de información previamente generado, la reinstalación no garantiza que la situación que presenta quede resuelta.
+
+Usted resguardara el equipo y este no debe salir de la sucursal y tampoco debe ser entregado al cliente hasta que tenga instalado de nuevo la APP de INEQ; ya que si el equipo es entregado o sale sin la APP el DAT quedará como responsable del Equipo adquirido a plazos del cliente si presenta demora de pago.
+
+¿De acuerdo?
+__________________________________________________________________________________________________
+PROTECCIÓN POR ROBO (Solicitado)
+
+Le agradezco el reporte, para poder continuar con la revisión de esta situación le solicitamos que nos comparta la siguiente documentación para su revisión ante el área jurídica por favor:
+
+	*Denuncia del cliente ante el Ministerio Publico por robo con violencia.
+	*Numero telefónico de contacto con el cliente
+
+Una vez que nos brinde estos datos y documentos vamos a poder revisar la situación y nos pondremos en contacto con el cliente para brindar el resultado de esta respuesta.
+
+__________________________________________________________________________________________________
+PROTECCIÓN POR ROBO CLIENTE FINAL (No Aprobado)
+Buenas tardes Sr./Sra.
+
+Nos comunicamos por parte del área de Soporte Credicel, para darle seguimiento a su solicitud de Protección contra robo con violencia, el cual lamentablemente *no fue aprobado* ❌
+
+Debido a: (Colocar la respuesta de Adalberto)
+
+Por lo cual deberá seguir realizando sus pagos semanales hasta liquidar su equipo adquirido a plazos para no afectar su historial crediticio.
+
+Quedamos atentos si llegase a tener alguna duda o pregunta. ¡Gracias por su confianza!
+
+Saludos,
+Soporte Credicel
+__________________________________________________________________________________________________
+PROTECCIÓN POR ROBO CLIENTE FINAL (Aprobado)
+
+Buenas tardes Sr./Sra.
+
+Nos comunicamos por parte del área de Soporte Credicel, para darle seguimiento a su solicitud de Protección contra robo con violencia, el cual ya fue *aprobado* ✅
+
+Para continuar, solo necesitamos que realice un pago de $100.00 a la siguiente cuenta:
+
+🏦 Banco: BBVA (Bancomer)
+👤 Titular: MICROTECNOLOGÍAS MÓVILES S.A. DE C.V.
+💳 Cuenta: 0196761445
+🔢 CLABE: 012650001967614455
+
+Una vez hecho el pago, por favor envíenos su comprobante por este medio 📸 para seguir con el trámite.
+
+Quedamos atentos. ¡Gracias por su confianza!
+
+Saludos,
+Soporte Credicel
+
+
+_________________________________________________________________________________________________
+
+Aviso importante: si el titular del financiamiento no responde la  llamada, el celular será bloqueado de forma inmediata ¿confirma que el titular xxxxxx contestará la llamada?
+_________________________________________________________________________________________________
+SMART RECOVERY
+
+Por favor reinicie el equipo de la siguiente manera:
+
+*Mantenga presionados los botones de apagar/encender y bajar volumen al mismo tiempo durante aproximadamente 10 segundos o libere los botones cuando el teléfono vibre.*
+
+Una vez encienda el dispositivo NO se deben de tocar los botones de la parte de abajo del equipo (APP EN SEGUNDO PLANO, HOME ATRAS O REGRESAR) hasta que termine de iniciar el equipo por favor ignorarlos como si no existieran
+
+Posteriormente conecte a WIFI o ingrese SIM con saldo (se recomienda WIFI)
+
+Si el equipo esta bloqueado por PIN/ PATRON por favor desbloquearlo y no dejar que se bloque de nuevo
+
+Cuando ya se hayan generado estos pasos me indica por favor para enviar una actualización de INEQ.
+__________________________________________________________________________________________________
+*** CAMBIO DE FUERZA DE VENTA FLASHFILL/KARTFULL ***
+
+En este caso por el momento no es posible realizar el cambio de fuerza de venta; ya que el cliente tiene un trámite en línea en seguimiento. Pido de su apoyo para comentarle al cliente que es necesario ponerse en contacto con el proveedor online con el que inició su trámite.
+__________________________________________________________________________________________________
+REINICIO DE EQUIPO FORZADO CON BOTONES ***
+
+Mantenga presionados los botones de apagar/encender y bajar volumen al mismo tiempo durante aproximadamente 10 segundos o libere los botones cuando el teléfono vibre.
+__________________________________________________________________________________________________
+REIMPRIMIR PAGOS ***
+
+Por favor apóyeme con los siguientes movimientos:
+
+PRIMERO diríjase a su registro de pagos
+SEGUNDO busque el pago que esta buscando (fecha, monto, IMEI, etc.)
+TERCERO en un costado hay una opción que dice "reimprimir", por favor presiónelo.
+__________________________________________________________________________________________________
+TECNO O INFINIX LIBERACION DEL ENROLAMIENTO EXPRES
+
+Hola, gracias por tu espera.
+
+Te comento que este equipo de la marca (TECNO o INFINIX), si se libera del enrolamiento, puede que ya no se pueda volver a enrolar en el futuro para venderlo con Credicel.
+
+Por eso, te recomendamos mejor apartar este equipo y usarlo en otro trámite, así aprovechas que ya está enrolado y la venta será más rápida.
+
+Si aún así deseas liberarlo, primero se tendrá que validar con tu administrador para que autorice el movimiento por favor.
+__________________________________________________________________________________________________
+
+Link de contrato
+
+Hola  👋
+
+¡Bienvenido a Credicel!
+Para continuar con tu proceso, es necesario completar la firma de tu contrato digital.
+
+Solo debes ingresar al siguiente enlace y seguir los pasos:
+🔗
+Ahí podrás realizar tu prueba de vida y firmar tu contrato de manera rápida y segura.
+Una vez finalizado, tu trámite continuará automáticamente.
+
+Credicel, siempre a tu servicio.
+
+
+
+
+
+__________________________________________________________________________________________________
+
+
+
+
+
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+
+
+
+PLANTILLAS PARA LLENAR
+
+CAMBIO DE IMEI YA CON EL VOBO DEL ADMIN
+
+Para validar su solicitud necesitamos que nos brinde los siguientes datos:
+
+*Nombre del titular:*
+*TAG:*
+*IMEI actual; Marca y modelo:*
+*IMEI nuevo; Marca y modelo:*
+________________________________________________________________________________________________________
+CANCELACIÓN DE VENTA
+
+Buenas Tardes, me puede apoyar con una solicitud de cancelación de una venta realizada el día  por parte de  .
+
+Motivo:
+
+Ya contamos con VoBo de ADMIN/ARN
+
+DATOS DE LA CUENTA:
+
+
+
+Tiene aplicado solo el pago de enganche por el monto de $ y nos confirma el agente que ya cuenta con el equipo y/o accesorios en sucursal, por favor.

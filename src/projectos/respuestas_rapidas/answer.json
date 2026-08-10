@@ -1,0 +1,21 @@
+{
+  "llamadas_bienvenida_dat": [
+    {
+      "imei": "",
+      "nombre": "",
+      "origen_contacto": "",
+      "numero": "",
+      "desbloqueo_enviado": true
+    }
+  ],
+  "llamadas_bienvenida_cel": [
+    {
+      "imei": "",
+      "nombre": "",
+      "origen_contacto": "",
+      "numero_contacto": "",
+      "numero_marcado": "",
+      "desbloqueo_enviado": true
+    }
+  ]
+}
