@@ -170,6 +170,33 @@ label {
   padding: 16px;
 }
 
+
+.input-dinamico {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Enfoque al hacer clic o escribir */
+.input-dinamico:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* Reglas específicas únicamente para los textareas */
+textarea.input-dinamico {
+  min-height: 90px;
+  resize: vertical; /* Permite estirar hacia abajo sin romper el ancho del modal */
+  line-height: 1.4;
+}
+
+
 /* 2. Tarjeta blanca del modal */
 .contenido-modal {
   background-color: #ffffff;
