@@ -48,28 +48,7 @@ const configuracionPlantillas = {
       `Aviso importante: si el titular del financiamiento no responde la llamada, el celular será bloqueado de forma inmediata ¿confirma que el titular ${datos.nombreTitular} contestará la llamada?`
   },
 
-"link-contrato":{
-  titulo:"link-contrato",
-  campos:[
-    { id: "nombre",  label: "Nombre", type: "text", placeholder: "Nombre completo"},
-    { id: "link",  label: "Link", type: "text", placeholder: "link contrato"},
 
-  
-  ],
-  generarTexto:(datos)=>
-    `Hola ${datos.nombre} 👋
-
-¡Bienvenido a Credicel!
-Para continuar con tu proceso, es necesario completar la firma de tu contrato digital.
-
-Solo debes ingresar al siguiente enlace y seguir los pasos:
-🔗 ${datos.link}
-Ahí podrás realizar tu prueba de vida y firmar tu contrato de manera rápida y segura.
-Una vez finalizado, tu trámite continuará automáticamente.
-
-Credicel, siempre a tu servicio.
-`
-},
 
 "formato-sistemas":{
   titulo:"formatosistemas",
@@ -78,7 +57,7 @@ Credicel, siempre a tu servicio.
     {id: "imei", label:"IMEI", type:"text", placeholder: "IMEI"},
     {id: "dat", label:"DAT", type:"text", placeholder: "DAT"},
     {id: "tienda", label:"Tienda", type:"text", placeholder: "Tienda"},
-    {id: "descripcion", label:"Descripcion", type:"text", placeholder: "Descripcion"},
+    {id: "descripcion", label:"Descripcion", tag:"textarea",  placeholder: "Descripcion" },
   ],
   generarTexto:(datos)=>
 
@@ -100,7 +79,7 @@ Credicel, siempre a tu servicio.
     {id: "modelo", label:"MODELO", type:"text", placeholder: "MODELO"},
     {id: "imei", label:"IMEI", type:"text", placeholder: "IMEI"},
     {id: "motivoSolicitud", label:"Motivo de la Solicitud", type:"text", placeholder: "Motivo de la Solicitud"},
-    {id: "motivoNoVenta", label:"Motivo por el cual no se realizo la venta con credicel", type:"text", placeholder: "Motivo por el cual no se realizo la venta con credicel"},
+    {id: "motivoNoVenta", label:"Motivo por el cual no se realizo la venta con credicel", tag:"textarea",  placeholder: "Motivo por el cual no se realizo la venta con credicel"},
   ],
   generarTexto:(datos)=>
     `
@@ -291,15 +270,25 @@ function construirFormulario(config) {
 
     div.className = "form-group";
 
-    div.innerHTML = `
+    if(campo.tag){
+       div.innerHTML = `
+      
+      <label for="${campo.id}">${campo.label}</label>
+      
+      <textarea  id="${campo.id}" class="input-dinamico" placeholder="${campo.placeholder}">  </textarea>`;
+    }
 
-    <label for="${campo.id}">${campo.label}</label>
+    else{
 
-    <input type="${campo.type}" id="${campo.id}" class="input-dinamico" placeholder="${campo.placeholder}">
-    `;
-
-    console.log("esto tare el config ",config)
-
+      div.innerHTML = `
+      
+      <label for="${campo.id}">${campo.label}</label>
+      
+      <input type="${campo.type}" id="${campo.id}" class="input-dinamico" placeholder="${campo.placeholder}">  `;
+      
+      console.log("esto tare el config ",config)
+      
+    }
     contenedorCampos.appendChild(div);
 
   });
