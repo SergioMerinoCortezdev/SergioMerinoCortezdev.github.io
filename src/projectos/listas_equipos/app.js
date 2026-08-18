@@ -7,7 +7,7 @@ const resultado_table = document.querySelector('.table_model');
 
 
 const data_excelJson = async () => {
-
+    console.log("lista de equipos 18-08-2026 ");
     //llamamos al archivo excel y lo convertimos a json
     //const response = await fetch('./db/equipos.xlsx');
     const response = await fetch('./db/equipos_2.xlsx');
