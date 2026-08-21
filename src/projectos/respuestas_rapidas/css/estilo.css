@@ -16,6 +16,25 @@ body {
   padding: 20px;
 }
 
+
+.uno{
+  display: none;
+  height: auto;
+  width: auto;
+  background-color: #007bff;
+}
+
+.dos{
+  
+  height: auto;
+  width: auto;
+  background-color: red;
+}
+
+
+
+
+
 /* Tarjeta contenedora principal */
 .container {
   background: #ffffff;
@@ -318,4 +337,46 @@ textarea.input-dinamico {
 
 .btn-primary:active {
   transform: scale(0.98);
+}
+
+
+/*************** TABS ******************/
+
+/* --- ESTILOS DE PESTAÑAS (TABS) --- */
+.tabs-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #64748b;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  color: #2563eb;
+}
+
+.tab-btn.active {
+  color: #2563eb;
+  border-bottom-color: #2563eb;
+}
+
+/* Ocultar/Mostrar contenido según la pestaña */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
