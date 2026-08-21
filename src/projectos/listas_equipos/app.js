@@ -3,20 +3,22 @@ let ver = document.querySelector('.see');
 const marcas_select = document.querySelector('.marcas-select');
 let modelTxt = document.querySelector('.input-models');
 const resultado_table = document.querySelector('.table_model'); 
-
+const  tableHead = document.querySelector('.table-primary');
 
 
 const data_excelJson = async () => {
-    console.log("lista de equipos 18-08-2026 ");
+
     //llamamos al archivo excel y lo convertimos a json
-    //const response = await fetch('./db/equipos.xlsx');
-    const response = await fetch('./db/equipos_2.xlsx');
+    const response = await fetch('./db/equipos.xlsx');
     const arrayBuffer = await response.arrayBuffer();
     const excel = XLSX.read(arrayBuffer, { type: 'array' });
     const nameSheet = excel.SheetNames[0];
     const dataExcel = XLSX.utils.sheet_to_json(excel.Sheets[nameSheet]);
 
-    console.log("Columnas del Excel:", Object.keys(dataExcel[0]));
+
+
+
+    
 
 
     const MarcaArray = new Map();
@@ -48,6 +50,9 @@ const data_excelJson = async () => {
 
     //ACTUALIZAR LA TABLA
     const renderizarTabla = () => {
+
+      
+
         // Obtenemos lo que el usuario quiere buscar
         const marcaSeleccionada = marcas_select.value;
         const textoBuscado = modelTxt.value.trim().toLowerCase();
@@ -68,6 +73,45 @@ const data_excelJson = async () => {
             );
         
 
+        if(marcas_select.value === "all") {
+
+      
+
+            tableHead.innerHTML = `
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>SKU</th>
+            <th>Enrolamiento</th>
+        </tr>
+    `;
+
+
+            // Mostrar todos los modelos
+                const allModels = [];
+
+            MarcaArray.forEach(modelos => {
+                allModels.push(...modelos);
+            });
+            const datosAll = allModels.filter(item => 
+                item.Modelo && String(item.Modelo).toLowerCase().includes(textoBuscado)
+            );
+            // Proceder con la lógica de filtrado para mostrar todos
+            showAll(datosAll);
+            return; // Salimos de la función para no continuar con el filtrado por marca
+        }
+
+        else{
+            tableHead.innerHTML = `
+        <tr>
+            <th>Modelo</th>
+            <th>SKU</th>
+            <th>Enrolamiento</th>
+        </tr>
+    `;
+        }
+
+
         // Limpiamos la tabla antes de agregar los nuevos resultados
         resultado_table.innerHTML = "";
 
@@ -83,6 +127,36 @@ const data_excelJson = async () => {
             resultado_table.appendChild(tr);
         });
     };
+
+
+    function showAll(MODELS_ARRAY) {
+
+
+        resultado_table.innerHTML = ""; // Limpiamos la tabla antes de agregar los nuevos resultados
+        
+
+            MODELS_ARRAY.forEach(item => {
+                
+                const tr = document.createElement('tr');
+         
+
+            tr.innerHTML = `
+
+                <td>${item.Marca}</td>
+                <td>${item.Modelo }</td>
+                <td>${item.SKUNUMBER }</td> 
+                <td>${item.Enrolamiento }</td>
+            `;
+
+            resultado_table.appendChild(tr);
+            
+            
+        });
+
+
+
+
+    }
 
     
     // listeners llaman a la funcion de renderizar
