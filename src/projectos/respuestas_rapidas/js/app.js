@@ -1,11 +1,14 @@
-const search = document.getElementById("listp");
-const template = document.getElementById("template");
+const select_rapido = document.getElementById("listp-rapidas");
+const select_form = document.getElementById("listp-datos");
+const template_rapido = document.getElementById("template-rapido");
+const template_datos = document.getElementById("template-datos");
 const modalform = document.getElementById("miModal");
 const closemodal = document.getElementById("cerrarModal");
 const contenedorCampos = document.getElementById("contenedorCampos");
 const modalTitulo = document.getElementById("modalTitulo");
 const btnGuardar = document.getElementById("btnGuardar");
-const btnCopy = document.getElementById("btnCopy");
+const btnCopyRapido = document.getElementById("btnCopyRapido");
+const btnCopyForm = document.getElementById("btnCopyDatos");
 
 let plantillaActual = null;
 
@@ -177,14 +180,16 @@ Le invitamos a intentarlo más adelante, ya que nuestras evaluaciones se actuali
 /******************* FUNCIONES ******************** */
 
 
-btnCopy.addEventListener('click', async()=>{
+const btnCopyFast = async()=>{
 
-const textoc = template.innerText;
+
+
+const textoc =  template_rapido.innerText;
 
 try {
 
   await navigator.clipboard.writeText(textoc);
-  btnCopy.innerText = "✅copiado";
+  btnCopyRapido.innerText = "✅copiado";
   
   
 } 
@@ -193,44 +198,87 @@ catch (error) {
 }
 
 setTimeout(function(){
-btnCopy.innerText = "📋 Copiar";
+btnCopyRapido.innerText = "📋 Copiar";
 
 },4000);
 
-});
+};
+
+
+const btnCopyFo= async()=>{
+
+
+
+const textoc =  template_datos.innerText;
+
+try {
+
+  await navigator.clipboard.writeText(textoc);
+  btnCopyForm.innerText = "✅copiado";
+  
+  
+} 
+catch (error) {
+  console.log("error de copy es ->", error);
+}
+
+setTimeout(function(){
+btnCopyForm.innerText = "📋 Copiar";
+
+},4000);
+
+};
+
+
+btnCopyForm.addEventListener('click', btnCopyFo)
+btnCopyRapido.addEventListener('click', btnCopyFast)
 
 
 
 
 // Escuchar cambios en el <select>
-search.addEventListener('change', (e) => {
-  
+
+const seleChangeForm = (e) =>{
+
+
+  //aqui el valor pude ser listp-datos o listp-rapidas 
+
   const opcionSeleccionada = e.target.value;
-  
+
   plantillaActual = configuracionPlantillas[opcionSeleccionada];
 
-
-
-
-
-  // Si la plantilla requiere campos, construimos el formulario y abrimos el modal
-  if (plantillaActual) {
 
     construirFormulario(plantillaActual);
     
     modalTitulo.innerText = plantillaActual.titulo;
     
     modalform.style.display = "flex";
+
+
+
+}
+
+const seleChangeFast = (e) =>{
+
+
+    //aqui el valor pude ser listp-datos o listp-rapidas 
+
+  const opcionSeleccionada = e.target.value;
+
+  plantillaActual = plantillasRapidas[opcionSeleccionada];
+
+
   
-  } 
-
-  else {
+   fastTemplate(opcionSeleccionada,plantillasRapidas);
 
 
-  fastTemplate(opcionSeleccionada,plantillasRapidas);
 
-  }
-});
+}
+
+
+
+select_rapido.addEventListener('change', seleChangeFast)
+select_form.addEventListener('change', seleChangeForm)
 
 
 function fastTemplate(opcionSeleccionada,templateArray){
@@ -245,7 +293,7 @@ function fastTemplate(opcionSeleccionada,templateArray){
     if(opcionSeleccionada === key){
 
       
-      template.innerText = templateArray[key].texto;
+      template_rapido.innerText = templateArray[key].texto;
       break;
 
 
@@ -258,11 +306,30 @@ function fastTemplate(opcionSeleccionada,templateArray){
 }
 
 
+function cambiarTab(event, tabId) {
+  // 1. Ocultar todos los contenidos de pestaña
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => content.classList.remove('active'));
+
+  // 2. Desactivar todos los botones
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // 3. Activar la pestaña y el botón seleccionados
+  document.getElementById(tabId).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+
+
+
 
 // Función que crea los <input> dinámicamente
 function construirFormulario(config) {
 
   contenedorCampos.innerHTML = ""; // Limpiar campos anteriores
+
+
+
 
   config.campos.forEach(campo => {
 
@@ -289,9 +356,13 @@ function construirFormulario(config) {
       console.log("esto tare el config ",config)
       
     }
+    
     contenedorCampos.appendChild(div);
 
   });
+
+
+
 
 }
 
@@ -326,7 +397,7 @@ btnGuardar.addEventListener('click', () => {
   }
 
   // Generar el texto y pasarlo al contenedor de la vista previa
-  template.innerText = plantillaActual.generarTexto(datosRecabados);
+  template_datos.innerText = plantillaActual.generarTexto(datosRecabados);
 
   modalform.style.display = "none";
 
