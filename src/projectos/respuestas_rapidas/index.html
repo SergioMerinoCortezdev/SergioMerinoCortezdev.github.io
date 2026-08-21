@@ -11,68 +11,89 @@
   <main class="container">
     <h2>Plantillas y Respuestas Rápidas</h2>
 
-    <form id="templateForm">
+    <!-- CONTENEDOR DE PESTAÑAS (TABS) -->
+    <div class="tabs-header">
+      <button class="tab-btn active" onclick="cambiarTab(event, 'tab-rapidas')">⚡ Respuestas Rápidas</button>
+      <button class="tab-btn" onclick="cambiarTab(event, 'tab-datos')">📝 Con Datos / Formulario</button>
+    </div>
+
+    <!-- RESPUESTAS RÁPIDAS -->
+    <div id="tab-rapidas" class="tab-content active">
       <div class="form-group">
-        <label for="listp">Seleccionar plantilla</label>
-        <select class="form-select" id="listp"> 
+        <label for="listp-rapidas">Seleccionar respuesta rápida</label>
+        <select class="form-select select-rapido" id="listp-rapidas"> 
           <option value="" disabled selected>-- Elige una opción --</option>
           <option value="sergio-saludo">Sergio Saludo</option>
           <option value="sergio-ayuda">Sergio Ayuda</option>
           <option value="nip-contrato">NIP y contrato: Ya no se le marca al cliente. 😊</option>
+          <option value="bloqueo-robo-extravio">Solicitud de Bloqueo por Robo o Extravió 🕵️‍♂️🥷</option>
+          <option value="enrolamiento-honor-xiaomi-expres-nuevo">Enrolamiento de HONOR y XIAOMI EXPRES (Nuevo)</option>
+          <option value="folio-rechazado">Folio rechazado ❌😔</option>
+          <option value="contrato-no-whatsapp">Realizar firma de contrato mediante Google y no WhatsApp ❌📝 </option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <div class="template-header">
+          <label>Vista previa</label>
+          <button type="button" id="btnCopyRapido" class="btn-copy">📋 Copiar</button>
+        </div>
+        <div id="template-rapido" class="template-box">
+          <i>Selecciona una respuesta rápida...</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- PLANTILLAS CON DATOS (MODAL) -->
+    <div id="tab-datos" class="tab-content">
+      <div class="form-group">
+        <label for="listp-datos">Seleccionar plantilla a llenar</label>
+        <select class="form-select select-formulario" id="listp-datos"> 
+          <option value="" disabled selected>-- Elige una opción con datos --</option>
+          <option value="aviso-llamada">Aviso llamada de bienvenida ⚠️ 📲</option>
           <option value="llamada-dat">Llamada de bienvenida DAT 📲⛺</option>
           <option value="llamada-cel">Llamada de bienvenida CEL 📞</option>
           <option value="formato-sistemas">FORMATO PARA SISTEMAS 🖥️</option>
           <option value="liberar-equipo-enrolado">Solicitud para equipos enrolados venta de contado 📲.</option>
-          <option value="aviso-llamada">Aviso llamada de bienvenida ⚠️ 📲</option>
-          <option value="enrolamiento-honor-xiaomi-expres-nuevo">Enrolamiento de HONOR y XIAOMI EXPRES (Nuevo)</option>
-          <option value="folio-rechazado">Folio rechazado ❌😔</option>
-          <option value="bloqueo-robo-extravio">Solicitud de Bloqueo por Robo o Extravió 🕵️‍♂️🥷</option>
-          <option value="contrato-no-whatsapp">Realizar firma de contrato mediante Google y no WhatsApp ❌📝 </option>
-          <option value="retirar-app-ineq">Mensaje para retirar la APP de INEQ (APP DE INEQ AUN ESTA COMO APP DE INCIO)</option>
+  
+          
+          
+          
+          <option value="retirar-app-ineq">Mensaje para retirar la APP de INEQ</option>
         </select>
       </div>
 
-      
-
       <div class="form-group">
-<div class="form-group">
-  <div class="template-header">
-    <label>Vista previa de la plantilla</label>
-    <button type="button" id="btnCopy" class="btn-copy">📋 Copiar</button>
-  </div>
-
-  <div id="template" class="template-box">
-    <i>Selecciona una plantilla...</i>
-  </div>
-</div>
-
-
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-</div>
-
-    </form>
-
-    <div id="miModal" class="modal">
-  <div class="contenido-modal">
-    <div class="modal-header">
-      <h2 id="modalTitulo">Completar Datos</h2>
-      <span id="cerrarModal" class="btn-cerrar">&times;</span>
+        <div class="template-header">
+          <label>Resultado generado</label>
+          <button type="button" id="btnCopyDatos" class="btn-copy">📋 Copiar</button>
+        </div>
+        <div id="template-datos" class="template-box">
+          <i>Selecciona una plantilla para completar sus datos...</i>
+        </div>
+      </div>
     </div>
 
-    <form class="modal-body" id="modalForm">
-      <div id="contenedorCampos"></div>
+    <!-- MODAL EXISTENTE -->
+    <div id="miModal" class="modal">
+      <div class="contenido-modal">
+        <div class="modal-header">
+          <h2 id="modalTitulo">Completar Datos</h2>
+          <span id="cerrarModal" class="btn-cerrar">&times;</span>
+        </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn-primary" id="btnGuardar">Generar Plantilla</button>
+        <form class="modal-body" id="modalForm">
+          <div id="contenedorCampos"></div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-primary" id="btnGuardar">Generar Plantilla</button>
+          </div>
+        </form>
       </div>
-    </form>
-  </div>
-</div>
-    
+    </div>
+
   </main>
-  
-  
+
   <script src="js/app.js"></script>
-  
 </body>
 </html>
