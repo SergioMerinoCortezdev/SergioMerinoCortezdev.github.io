@@ -125,6 +125,7 @@ const data_excelJson = async () => {
                 <td>${item.Modelo }</td>
                 <td>${item.SKUNUMBER }</td> 
                 <td>${item.Enrolamiento }</td>
+                <th>${item.Recomendaciones}</th>
             `;
             resultado_table.appendChild(tr);
         });
