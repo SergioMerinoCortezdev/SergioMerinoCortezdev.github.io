@@ -83,6 +83,7 @@ const data_excelJson = async () => {
             <th>Modelo</th>
             <th>SKU</th>
             <th>Enrolamiento</th>
+            <th>Recomendaciones</th>
         </tr>
     `;
 
@@ -107,6 +108,7 @@ const data_excelJson = async () => {
             <th>Modelo</th>
             <th>SKU</th>
             <th>Enrolamiento</th>
+            <th>Recomendaciones</th>
         </tr>
     `;
         }
@@ -146,6 +148,7 @@ const data_excelJson = async () => {
                 <td>${item.Modelo }</td>
                 <td>${item.SKUNUMBER }</td> 
                 <td>${item.Enrolamiento }</td>
+                <th>${item.Recomendaciones}</th>
             `;
 
             resultado_table.appendChild(tr);
