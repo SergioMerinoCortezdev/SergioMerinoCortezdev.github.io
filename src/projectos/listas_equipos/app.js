@@ -9,7 +9,7 @@ const  tableHead = document.querySelector('.table-primary');
 const data_excelJson = async () => {
 
     //llamamos al archivo excel y lo convertimos a json
-    const response = await fetch('./db/equipos.xlsx');
+    const response = await fetch('./db/equipos030926.xlsx');
     const arrayBuffer = await response.arrayBuffer();
     const excel = XLSX.read(arrayBuffer, { type: 'array' });
     const nameSheet = excel.SheetNames[0];
