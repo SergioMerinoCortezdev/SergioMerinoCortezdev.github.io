@@ -76,7 +76,7 @@ const configuracionPlantillas = {
 },
 
 "liberar-equipo-enrolado":{
-  titulo:"formatosistemas",
+  titulo:"liberar equipo",
   campos:[
     {id: "marca", label:"MARCA", type:"text", placeholder: "MARCA"},
     {id: "modelo", label:"MODELO", type:"text", placeholder: "MODELO"},
@@ -97,7 +97,28 @@ const configuracionPlantillas = {
   
 },
 
+"cambio-fuerza-venta":{
+  titulo:"cambio de fuerza venta",
+  campos:[
+    {id:"folio", label:"folio",type:"text",placeholder:"folio"},
+    {id:"fechadecreacion", label:"fecha de creacion",type:"text",placeholder:"fecha de creacion"},
+    {id:"nombre", label:"nombre",type:"text",placeholder:"nombre del cliente"},
+    {id:"numero", label:"numero",type:"text",placeholder:"numero telefonico"},
+    {id:"nombrevendedor", label:"nombre del vendedor",type:"text",placeholder:"nombre del vendedor"},
 
+
+  ],
+  generarTexto:(datos)=>`Hola buenas días, le comento tenemos una solicitud de cambio de fuerza de venta de un folio realizado en una de sus tiendas,
+   le paso el nombre del cliente, número telefónico y nombre del asesor que subió el folio para que pueda realizar una retención de esta,
+    por favor pido que me pueda validar y/o confirmar si el cliente pasará a su sucursal a realizar la compra para no realizar el cambio,
+     seria en aproximadamente 10 min por favor.  
+
+Folio: ${datos.folio}   
+Fecha de creacion: ${datos.fechadecreacion}
+Nombre del cliente: ${datos.nombre}
+Numero telefonico: ${datos.numero}
+NOMBRE DEL VENDEDOR: ${datos.nombrevendedor}  `
+}
 
 
 
@@ -169,6 +190,28 @@ Si el cliente ya no cuenta con la INE puede tomarse una foto sosteniendo el docu
 Le invitamos a intentarlo más adelante, ya que nuestras evaluaciones se actualizan constantemente. Se recomienda realizar una nueva solicitud en un periodo de 2 a 3 meses.
 ¡Gracias por su confianza en CREDICEL! 🫡
 `
+  },
+  
+  "enrolamiento-samsung":{
+    texto:`Muy amable por su tiempo de espera, revisando el equipo con IMEI: aún no se encuentra enrolado con el sistema de Knox.
+Por favor verifique que el equipo no tenga actualizaciones pendientes del sistema operativo; si todo esta en orden por favor genere lo siguiente:
+1. Restablezca el equipo a valores de fábrica 📲
+2. Cuando el equipo este en la pantalla de BIENVENIDA; demos clic en VERIFICAR EL IMEI en su consola de venta. 💻✅
+3. Inicie la configuración del equipo hasta la pantalla de inicio 📱y conéctelo a una red de WIFI 🛜
+
+`
+  },
+
+  "enrolamiento-honor-xiomi-ineq":{
+    texto:`Al tener el equipo INEQ no se están cumpliendo con las condiciones de que el equipo este completamente sellado (sin encender, no tener conectado a internet). Esto puede afectar a que no reciba el enrolamiento; sin embargo, se intentara con lo siguiente para validar si puede recibir el enrolamiento pero no se puede garantizar que el proceso funcione.
+Se enviara la liberación de INEQ al equipo y cuando lo retire realice lo siguiente:
+1. Restablezca el equipo a valores de fábrica 📲
+2. Cuando el equipo este en la pantalla de BIENVENIDA; demos clic en VERIFICAR EL IMEI en su consola de venta. 💻✅
+3. Inicie la configuración del equipo hasta la pantalla de inicio 📱y conéctelo a una red de WIFI 🛜
+
+📌 Nota: Si después de este proceso el equipo en 5 min no recibe el enrolamiento para continuar con la venta será necesario generar cambio de equipo.
+`
+
   }
 
 }
