@@ -8,7 +8,7 @@ let modelTxt = document.querySelector('.input-models');
 const data_excel = async()=>{
 
         //llamamos al archivo excel y lo convertimos a json
-    const response = await fetch('./db/equipos.xlsx');
+    const response = await fetch('./db/equipos030926.xlsx');
     const arrayBuffer = await response.arrayBuffer();
     const excel = XLSX.read(arrayBuffer, { type: 'array' });
     const nameSheet = excel.SheetNames[1];
