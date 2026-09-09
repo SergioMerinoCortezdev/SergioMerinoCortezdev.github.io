@@ -118,8 +118,25 @@ Fecha de creacion: ${datos.fechadecreacion}
 Nombre del cliente: ${datos.nombre}
 Numero telefonico: ${datos.numero}
 NOMBRE DEL VENDEDOR: ${datos.nombrevendedor}  `
-}
+},
 
+
+"liberar-equipo-enrolado-cuenta-liquidada":{
+titulo:"liberar equipo enrolado por cuenta liquidada",
+campos:[
+  {id: "marca", label:"MARCA", type:"text", placeholder: "MARCA"},
+  {id: "imei", label:"IMEI", type:"text", placeholder: "IMEI"},],
+
+  generarTexto:(datos)=>
+  `
+  MARCA: ${datos.marca}
+  IMEI: ${datos.imei}
+
+  Buenas tardes lic @Letty Maldonadome apoya con la liberación de cuenta liquidada de ${datos.marca} por favor 
+  imei ${datos.imei}  
+  `
+
+}
 
 
 };
