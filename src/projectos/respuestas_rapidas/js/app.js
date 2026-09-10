@@ -198,10 +198,9 @@ Si el cliente ya no cuenta con la INE puede tomarse una foto sosteniendo el docu
   },
 
   "folio-rechazado":{
-    texto:`Folio rechazado ❌😔
-    El sistema de evaluación de financiamiento considera diversos factores, y en este momento no es posible aprobar el financiamiento para su cliente.
-Le invitamos a intentarlo más adelante, ya que nuestras evaluaciones se actualizan constantemente. Se recomienda realizar una nueva solicitud en un periodo de 2 a 3 meses.
-¡Gracias por su confianza en CREDICEL! 🫡
+    texto:`El algoritmo evalúa distintos factores y, por el momento, tu cliente no fue aprobado para compra a plazos. No podemos identificar una variable específica como motivo del rechazo.
+
+Puede realizar una nueva solicitud más adelante. Si actualmente tiene adeudos con otras instituciones, recomendamos ponerse al corriente antes de solicitar una nueva evaluación.
 `
   },
   
