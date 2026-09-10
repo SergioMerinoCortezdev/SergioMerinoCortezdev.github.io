@@ -128,11 +128,7 @@ campos:[
   {id: "imei", label:"IMEI", type:"text", placeholder: "IMEI"},],
 
   generarTexto:(datos)=>
-  `
-  MARCA: ${datos.marca}
-  IMEI: ${datos.imei}
-
-  Buenas tardes lic @Letty Maldonadome apoya con la liberación de cuenta liquidada de ${datos.marca} por favor 
+  `Buenas tardes lic @LettyMaldonado me apoya con la liberación de cuenta liquidada de ${datos.marca} por favor 
   imei ${datos.imei}  
   `
 
