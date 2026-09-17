@@ -132,7 +132,22 @@ campos:[
   imei ${datos.imei}  
   `
 
-}
+},
+
+  "solicitud-tag":{
+     titulo:"solicitud-tag",
+     campos:[
+      {id:"nombre", label:"Nombre", type:"text", placeholder: "Nombre"  },
+      {id:"tag", label:"TAG", type:"text", placeholder: "TAG"  },
+      {id:"imei", label:"IMEI", type:"text", placeholder: "IMEI"  },
+    ],
+    generarTexto:(datos)=>
+    `
+    NOMBRE: ${datos.nombre}
+    TAG: ${datos.tag}
+    IMEI: ${datos.imei}`
+    
+  }
 
 
 };
